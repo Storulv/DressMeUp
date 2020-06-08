@@ -1,0 +1,17 @@
+.ClothingIcon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.ClothingIconType{
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    border-radius: 5%;
+    background-color: coral;
+}
+.Card p {
+    text-align: center;
+}

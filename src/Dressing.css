@@ -1,0 +1,10 @@
+.Dressing .myDressing{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 740px){
+    .Dressing .myDressing{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+button{
+    display: block;
+    margin: auto;
+    background-color: darkgreen;
+    color: aliceblue;
+    width: 130px;
+    height: 30px;
+}
+.Draw p {
+    text-align: center;
+}
