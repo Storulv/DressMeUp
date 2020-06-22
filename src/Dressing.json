@@ -1,0 +1,79 @@
+{
+    "top": [
+        {
+            "tshirt": [
+                "volcom",
+                "dentelle blanc",
+                "vert",
+                "pokemon",
+                "tête de mort"
+            ],
+            "shirt": [
+                "rayée",
+                "blanche",
+                "noire",
+                "blanche à manches courtes",
+                "blanche à manches longues",
+                "bleu pastel",
+                "noir trouée",
+                "gris"
+            ],
+            "tankShirt": [
+                "noir",
+                "gris",
+                "blanc",
+                "violet",
+                "jaune",
+                "vert",
+                "rouge",
+                "LSM",
+                "gris strillé",
+                "shaka ponk gris",
+                "shaka ponk blanc",
+                "shaka ponk bang bang",
+                "kadavera",
+                "vert gris motif coeur",
+                "moon",
+                "pikachu",
+                "noir fluide",
+                "marron"
+            ]
+        }
+    ],
+    "bottom": [
+        {
+            "shorts": [
+                "bleu",
+                "bleu ciel",
+                "noire",
+                "blanc"
+            ],
+            "jeans": [
+                "bleu ciel",
+                "bleu foncé",
+                "vert",
+                "bleu délavé",
+                "noir",
+                "noir délavé",
+                "noir troué",
+                "gris"
+            ],
+            "skirts": [
+                "patineuse noire",
+                "mouflante noire",
+                "marron",
+                "triskel"
+            ]
+        }
+    ],
+    "dress": [
+        "carreaux noir et blanc",
+        "blanche",
+        "rayure",
+        "noire ample",
+        "noire patineuse",
+        "tête de mort moulante",
+        "constellation",
+        "carreaux"
+    ]
+}

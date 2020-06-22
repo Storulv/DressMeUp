@@ -9,7 +9,7 @@
     text-align: center;
     width: 100px;
     height: 150px;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: coral;
 }
 .Card p {

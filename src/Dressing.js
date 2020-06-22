@@ -1,7 +1,71 @@
 import React from 'react';
+import dataDresses from './Dressing/Dresses.json';
+import dataJeans from './Dressing/Jeans.json';
+import dataShirts from './Dressing/Shirts.json';
+import dataShorts from './Dressing/Shorts.json';
+import dataSkirts from './Dressing/Skirts.json';
+import dataTankShirts from './Dressing/TankShirts.json';
+import dataTops from './Dressing/Tops.json';
+import dataTshirts from './Dressing/Tshirts.json';
 import './Dressing.css';
 
-function Dressing() {
+const Dressing = props => {
+
+    const tshirt = dataTshirts.tshirt
+    const top = dataTops.Tops
+    const tankShirt = dataTankShirts.tankShirt
+    const skirt = dataSkirts.skirts
+    const short = dataShorts.shorts
+    const shirt = dataShirts.shirt
+    const jeans = dataJeans.jeans
+    const dress = dataDresses.dress
+
+    return (
+        <div>
+            <div className='listOfMy'>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataTshirts)}</div>
+                    {tshirt.map(tshirt => <li key={tshirt}>{tshirt}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataTops)}</div>
+                    {top.map(top => <li key={top}>{top}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataTankShirts)}</div>
+                    {tankShirt.map(tankShirt => <li key={tankShirt}>{tankShirt}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataSkirts)}</div>
+                    {skirt.map(skirt => <li key={skirt}>{skirt}</li>)}
+                </div>
+            </div>
+            <div className='listOfMy'>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataShorts)}</div>
+                    {short.map(short => <li key={short}>{short}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataShirts)}</div>
+                    {shirt.map(shirt => <li key={shirt}>{shirt}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataJeans)}</div>
+                    {jeans.map(jeans => <li key={jeans}>{jeans}</li>)}
+                </div>
+                <div className='oneListOfMy'>
+                    <div className='listTitle'>{Object.keys(dataDresses)}</div>
+                    {dress.map(dress => <li key={dress}>{dress}</li>)}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+{/*Object.keys(dressing.top[0])}
+{Object.values(dressing.top[0])*/}
+
+/*function Dressing() {
 
     return (
         <div className='Dressing'>
@@ -73,7 +137,7 @@ function Dressing() {
                         <li>4 : Blanc manches courtes</li>
                         <li>5 : Bleu pastel</li>
                         <li>6 : Blanc manches longues</li>
-                        <li>7 : Noir troué</li>
+                        <li>7 : Noir trouée</li>
                         <li>8 : Gris</li>
                     </ul>
                 </div>
@@ -115,6 +179,6 @@ function Dressing() {
             </div>
         </div>
     );
-}
+}*/
 
 export default Dressing;

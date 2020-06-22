@@ -12,7 +12,7 @@ function App() {
       <Draw/>
       <h3>And draw your DressUp</h3>
       <Card myCard/>
-      <h3>Dressing :</h3>
+      <h3>My dressing :</h3>
       <Dressing/>
     </div>
   );

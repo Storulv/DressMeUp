@@ -1,7 +1,25 @@
 import React, { useState } from 'react';
+import dataDresses from './Dressing/Dresses.json';
+import dataJeans from './Dressing/Jeans.json';
+import dataShirts from './Dressing/Shirts.json';
+import dataShorts from './Dressing/Shorts.json';
+import dataSkirts from './Dressing/Skirts.json';
+import dataTankShirts from './Dressing/TankShirts.json';
+import dataTops from './Dressing/Tops.json';
+import dataTshirts from './Dressing/Tshirts.json';
 import './Card.css';
 
 const Card = props => {
+    const tshirt = dataTshirts.tshirt
+    const top = dataTops.Tops
+    const tankShirt = dataTankShirts.tankShirt
+    const skirt = dataSkirts.skirts
+    const short = dataShorts.shorts
+    const shirt = dataShirts.shirt
+    const jeans = dataJeans.jeans
+    const dress = dataDresses.dress
+
+
     const listOfCardsOne = ['Shorts', 'Jeans', 'Skirts', 'Dress']
     const listOfCardsTwo = ['T-shirts', 'Shirts', 'Tank-Tops', 'Tops']
 
@@ -10,24 +28,23 @@ const Card = props => {
     const draw = (card) => {
         console.log("card", card)
         if (card === 'Shorts') {
-            setDrawResult(Math.floor((Math.random() * 4) + 1))
+            setDrawResult(short[Math.floor(Math.random() * short.length)])
         } else if (card === 'Jeans') {
-            setDrawResult(Math.floor((Math.random() * 8) + 1))
+            setDrawResult(jeans[Math.floor(Math.random() * jeans.length)])
         } else if (card === 'Skirts') {
-            setDrawResult(Math.floor((Math.random() * 4) + 1))
+            setDrawResult(skirt[Math.floor(Math.random() * skirt.length)])
         } else if (card === 'Dress') {
-            setDrawResult(Math.floor((Math.random() * 9) + 1))
+            setDrawResult(dress[Math.floor(Math.random() * dress.length)])
         } else if (card === 'T-shirts') {
-            setDrawResult(Math.floor((Math.random() * 5) + 1))
+            setDrawResult(tshirt[Math.floor(Math.random() * tshirt.length)])
         } else if (card === 'Shirts') {
-            setDrawResult(Math.floor((Math.random() * 6) + 1))
+            setDrawResult(shirt[Math.floor(Math.random() * shirt.length)])
         } else if (card === 'Tank-Tops') {
-            setDrawResult(Math.floor((Math.random() * 18) + 1))
+            setDrawResult(tankShirt[Math.floor(Math.random() * tankShirt.length)])
         } else if (card === 'Tops') {
-            setDrawResult(Math.floor((Math.random() * 7) + 1))
+            setDrawResult(top[Math.floor(Math.random() * top.length)])
         }
     }
-
 
     return (
         <div className='Card'>
@@ -51,7 +68,9 @@ const Card = props => {
             </div>
             <p>your DressUp is... <br /><br />{drawResult}<br /></p>
         </div>
-    );
-};
+    )
+}
+
+
 
 export default Card;
